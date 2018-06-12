@@ -7,6 +7,7 @@ $blue: blue;
 
 body
     background-color: $blue
+    font-size: 100%
 
     main
         display: flex
@@ -18,13 +19,17 @@ body
         width: 90vw
         height: 90vh
         padding: 20px
+        font-size: 1.5rem
+
         h1
             text-align: center
             padding: 10px
+           
 
         button
-            display: block
+            display:
             margin: auto
+            width: 100%
             padding: 20px 30px
             border-radius: 10px
         
@@ -32,14 +37,38 @@ body
             display: flex
             flex-direction: column
             justify-content: center
+            margin-top: 20px
+            padding: 20px
+            border-radius: 10px
+            box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75)
+            font-size: 1rem
+           
 
             h2, h3, p
                 text-align: center
+                padding: 20px
                 color: white
+                font-size: 1.5em
 
             input
                 display: block
+                width: 100%
+                height: 
                 margin: auto
+                font-size: 1.5rem
+               
+        
+        #newOrStop
+            div
+                display: flex
+                justify-content: space-around
+
+                button
+                    margin: 10px
 
 .hide
-    display: none       
+    display: none
+.good
+    background-color: green
+.bad
+    background-color: red
