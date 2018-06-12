@@ -6,35 +6,78 @@
 
 body {
   background-color: blue;
+  font-size: 100%;
 }
 
-body h1 {
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5vh auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+  width: 90vw;
+  min-height: 90vh;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+body main h1 {
   text-align: center;
   padding: 10px;
 }
 
-body button {
-  display: block;
+body main button {
   margin: auto;
+  width: 100%;
   padding: 20px 30px;
   border-radius: 10px;
 }
 
-body .card {
-  background-color: green;
-  width: 80%;
-  margin: 10px auto;
+body main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+  font-size: 1rem;
 }
 
-body .card p {
-  padding: 20px;
+body main section h2, body main section h3, body main section p {
   text-align: center;
+  padding: 20px;
   color: white;
+  font-size: 1.5em;
 }
 
-body .hide {
+body main section input {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+body main #newOrStop div {
+  display: flex;
+  justify-content: space-around;
+}
+
+body main #newOrStop div button {
+  margin: 10px;
+}
+
+.hide {
   display: none;
+}
+
+.good {
+  background-color: green;
+}
+
+.bad {
+  background-color: red;
 }
 /*# sourceMappingURL=style.css.map */

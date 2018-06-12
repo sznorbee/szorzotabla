@@ -11,10 +11,28 @@
     <title>Szorzotabla</title>
 </head>
     <body>
-        <div class="">
+        <main>
             <h1>Szorzotabla gyakorlas</h1>
-            <button>Start</button>
-        </div>
+            <button id="startButton">Start</button>
+            <section id="question" class="hide">
+                <h2>Mennyi X x Y ?</h2>
+                <form action="">
+                    <input type="text" placeholder="Ird ide a valaszt"><br>
+                    <button><input type="submit" value="Ok"></button>
+                </form>
+            </section>
+            <section id="result" class="hide">
+                    <h2>Ügyes vagy!</h2>
+                    <p>X x Y az tényleg ennyi!</p>
+            </section>
+            <section id="newOrStop" class="hide">
+                    <h3>Szeretnél új kérdést?</h3>
+                    <div>
+                        <button id="newButton">Kérek</button>
+                        <button id="stopButton">Nem</button>
+                    </div>
+            </section>
+        </main>
     </body>
 
     <script src="js/calculalert.js"></script>
