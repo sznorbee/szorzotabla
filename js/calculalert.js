@@ -10,7 +10,7 @@ $(document).ready(function(){
 
     function multiplicationTest()
     {
-        
+        $("h1").addClass("hide");
         $("#result").addClass("hide");
         $("#newOrStop").addClass("hide");
  
