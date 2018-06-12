@@ -27,6 +27,7 @@ $(document).ready(function(){
         $("#startButton").addClass("hide");
        
         $("input[type=text]").val(" ");
+        $("input[type=text]").attr("placeholder", "Ide írd a valaszt!");
         $("#question").removeClass("hide");
         $("h2").html("Mennyi: " + ra + " x " + rb + "?");
 
