@@ -20,7 +20,7 @@ body main {
   padding: 20px;
 }
 
-body main h1 {
+body main h1, body main h2 {
   text-align: center;
   padding: 10px;
 }
@@ -30,5 +30,20 @@ body main button {
   margin: auto;
   padding: 20px 30px;
   border-radius: 10px;
+}
+
+body main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body main section input {
+  display: block;
+  margin: auto;
+}
+
+.hide {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
