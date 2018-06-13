@@ -1,6 +1,6 @@
 $(document).ready(function(){
     console.log("jquery is ready");
-
+   
     $("#startButton").click(multiplicationTest);
     $("#newButton").click(multiplicationTest);
     
@@ -27,12 +27,17 @@ $(document).ready(function(){
         $("#startButton").addClass("hide");
        
         $("input[type=number]").val(" ");
+        
         $("input[type=number]").attr("placeholder", "Ide írd a valaszt!");
         $("#question").removeClass("hide");
         $("h2").html("Mennyi: " + ra + " x " + rb + "?");
-
+        
         //wait for response
         console.log("wait for response");
+
+        //set focus on input field
+        $("input[type=number]").focus();
+        console.log("set focus");
 
         //submit form to get value from input
         $("form").submit(function(event)
@@ -75,6 +80,10 @@ $(document).ready(function(){
 
            
         });
+        
+        
+            
+        
         console.log("outside of function");
         
     }; //end of multipl func.
