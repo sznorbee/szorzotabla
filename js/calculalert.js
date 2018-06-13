@@ -26,8 +26,8 @@ $(document).ready(function(){
         //change display
         $("#startButton").addClass("hide");
        
-        $("input[type=text]").val(" ");
-        $("input[type=text]").attr("placeholder", "Ide írd a valaszt!");
+        $("input[type=number]").val(" ");
+        $("input[type=number]").attr("placeholder", "Ide írd a valaszt!");
         $("#question").removeClass("hide");
         $("h2").html("Mennyi: " + ra + " x " + rb + "?");
 
@@ -40,7 +40,7 @@ $(document).ready(function(){
             event.preventDefault();
             $("#result").removeClass();
             $("#result").addClass("hide");
-            var valasz = $("input[type=text]").val();
+            var valasz = $("input[type=number]").val();
             console.log("valasz " + valasz);
 
             //check response
